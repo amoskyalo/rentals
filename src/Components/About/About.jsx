@@ -3,7 +3,7 @@ import { datas } from "./AboutData";
 
 const About = () => {
   return (
-    <div className="about pb-10 mt-10 px-0 lg:px-4 xl:px-0" id="about">
+    <div className="about pb-10 mt-10 px-0 lg:px-10 xl:px-0" id="about">
       <div className="mx-auto max-w-screen-xl">
         <h2 className="text-sz text-headerColor font-bold text-center">
           How We Make <span className="text-spanColor">Difference</span>
