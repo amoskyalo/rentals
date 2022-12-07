@@ -21,7 +21,7 @@ module.exports = {
       },
       colors: {
         navColor: '#244886',
-        stickyNav: 'rgba(36,72,134, 0.8)',
+        stickyNav: 'rgba(36,72,134, 1)',
         borderColor: '#686a10',
         whiteBg: "rgba(255, 255, 255, 0.7)",
         textColor: "#343d48",

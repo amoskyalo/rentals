@@ -37,13 +37,13 @@ const Hero = () => {
       </nav>
 
       {/* hero */}
-      <div className="mt-20 h-full xl:py-0 lg:px-4">
+      <div className="mt-20 h-full xl:px-0 lg:px-10">
         <div className="flex flex-row h-full mx-auto space-x-10 md:max-w-screen-xl">
           <div className="flex flex-col w-1/2">
             <h2 className="text-white text-sz leading-1 font-bold capitalize">
               We help you manage your rentals with ease...
             </h2>
-            <p className="text-white text-xl my-4">
+            <p className="text-white text-xl my-4 lg:text-base xl:text-xl">
               For many property managers, handling their routine tasks consists
               of a large number of juggling tasks around. Manually performing
               such business operations as tracking rent payments and managing

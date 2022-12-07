@@ -3,7 +3,7 @@ import React from "react";
 const Pricing = () => {
   return (
     <div
-      className="footer flex flex-col mx-auto my-10 gap-10 md:max-w-screen-xl lg:px-4 xl:px-0"
+      className="footer flex flex-col mx-auto my-10 gap-10 md:max-w-screen-xl lg:px-10 xl:px-0"
       id="pricing"
     >
       <h2 className="text-szmd text-headerColor text-center font-bold">
@@ -38,8 +38,8 @@ const Pricing = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex absolute bottom-4 left-10 w-3/4">
-              <button className="bg-navColor rounded w-full text-white py-2">
+            <div className="flex absolute bottom-4 w-max">
+              <button className="bg-navColor rounded w-full text-white py-1 px-10 xl:py-2">
                 Choose plan
               </button>
             </div>
@@ -63,8 +63,8 @@ const Pricing = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex absolute bottom-4 left-10 w-3/4">
-              <button className="bg-navColor rounded w-full text-white py-2">
+            <div className="flex absolute bottom-4 w-max">
+            <button className="bg-navColor rounded w-full text-white py-1 px-10 xl:py-2">
                 Choose plan
               </button>
             </div>
@@ -91,8 +91,8 @@ const Pricing = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex absolute bottom-4 left-10 w-3/4">
-              <button className="bg-navColor rounded w-full text-white py-2">
+            <div className="flex absolute bottom-4 w-max">
+            <button className="bg-navColor rounded w-full text-white py-1 px-10 xl:py-2">
                 Choose plan
               </button>
             </div>

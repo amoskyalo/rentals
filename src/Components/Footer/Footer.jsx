@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className='border py-4 bg-footerColor'>
+    <div className='border py-4 bg-footerColor lg:px-10 xl:px-0'>
         <div className="flex flex-row justify-between items-center mx-auto md:max-w-screen-xl">
             <div className="flex flex-row items-center gap-4">
                 <Link><BsTwitter className='text-2xl text-navColor'/></Link>
