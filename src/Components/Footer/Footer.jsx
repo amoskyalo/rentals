@@ -20,18 +20,18 @@ const Footer = () => {
           <div className="flex flex-col px-2 space-y-5 md:w-[40%] md:px-0">
             <div className="flex flex-col  space-y-2 border-b pb-2">
               <Link to="/home" className="flex flex-row items-center">
-                <img src={logo} alt="our logo" className="h-24 w-24" />
-                <p className="text-navColor text-4xl font-semibold">Ourname</p>
+                <img src={logo} alt="our logo" className="h-16 w-16 md:h-24 md:w-24" />
+                <p className="text-navColor text-xl font-semibold md:text-4xl">Ourname</p>
               </Link>
-              <p className="text-xl text-navColor">
+              <p className="text-lg text-navColor md:text-xl">
                 We make rental management simple, secure and comfortable for you
               </p>
             </div>
             <div className="flex flex-col">
-              <h2 className="text-navColor text-xl font-semibold">
+              <h2 className="text-navColor text-lg font-semibold md:text-xl">
                 Join Our Newsletter & Marketing Communication
               </h2>
-              <p className="text-navColor text-lg">
+              <p className="text-navColor md:text-lg">
                 We'll send you news and offers.
               </p>
             </div>

@@ -2,16 +2,22 @@ import React from "react";
 import image from "../../Assets/image.png";
 import logo from "../../Assets/logo2.png";
 import { useState } from "react";
-import { AiOutlineMenu } from 'react-icons/ai'
+import { AiOutlineMenu } from "react-icons/ai";
 
 const Hero = () => {
   const [sticky, setSticky] = useState("#");
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(false);
+
   window.addEventListener("scroll", () => {
     if (window.pageYOffset >= 100) {
       return setSticky("sticky");
     }
     setSticky("#");
+  });
+
+  //disable nav onscroll
+  window.addEventListener("scroll", () => {
+    return setActive(false);
   });
 
   return (
@@ -23,24 +29,48 @@ const Hero = () => {
         }`}
       >
         <div className="relative flex flex-row justify-between items-center mx-auto max-w-full md:max-w-screen-xl">
-          <a href="home" className="flex flex-row items-center h-16 md:h-20 lg:h-20 xl:h-20 z-50">
+          <a
+            href="home"
+            className="flex flex-row items-center h-16 md:h-20 lg:h-20 xl:h-20 z-50"
+          >
             <img src={logo} alt="" className="h-full" />
-            <p className="text-white text-base font-semibold md:text-xl md:text-xl">OurName</p>
+            <p className="text-white text-base font-semibold md:text-xl md:text-xl">
+              OurName
+            </p>
           </a>
-          <div className={`flex flex-col items-center absolute ${active ? `top-[4rem]` : `top-[-400%]`} duration-500 w-full pb-4 bg-navColor md:flex-row md:pb-0 md:bg-none md:space-x-5 md:space-x-5 md:relative md:w-max md:top-0`}>
-            <a href="#home" className="text-white text-base font-normal md:text-xl md:font-semibold">
+          <div
+            className={`flex flex-col items-center absolute ${
+              active ? `top-[4rem]` : `top-[-450%]`
+            } duration-500 w-full pb-4 bg-navColor space-y-5 md:flex-row md:pb-0 md:bg-none md:space-x-5 md:space-y-0 md:relative md:w-max md:top-0`}
+          >
+            <a
+              href="#home"
+              className="text-white text-lg font-normal md:text-xl md:font-semibold"
+            >
               Home
             </a>
-            <a href="#about" className="text-white text-base font-normal md:text-xl md:font-semibold">
+            <a
+              href="#about"
+              className="text-white text-lg font-normal md:text-xl md:font-semibold"
+            >
               About
             </a>
-            <a href="#contacts" className="text-white text-base font-normal md:text-xl md:font-semibold">
+            <a
+              href="#contacts"
+              className="text-white text-lg font-normal md:text-xl md:font-semibold"
+            >
               Contact
             </a>
-            <a href="#pricing" className="text-white text-base font-normal md:text-xl md:font-semibold">
+            <a
+              href="#pricing"
+              className="text-white text-lg font-normal md:text-xl md:font-semibold"
+            >
               Pricing
             </a>
-            <a href="#pricing" className="text-white text-base font-normal md:text-xl md:font-semibold">
+            <a
+              href="#pricing"
+              className="text-white text-lg font-normal md:text-xl md:font-semibold"
+            >
               Testimonials
             </a>
             <a
@@ -58,8 +88,11 @@ const Hero = () => {
               Get started
             </a>
           </div>
-          <div className="flex mr-1 lg:hidden z-50" onClick={() =>setActive(!active)}>
-            <AiOutlineMenu className="text-2xl text-white"/>
+          <div
+            className="flex mr-1 lg:hidden z-50"
+            onClick={() => setActive(!active)}
+          >
+            <AiOutlineMenu className="text-2xl text-white" />
           </div>
         </div>
       </nav>
@@ -88,7 +121,11 @@ const Hero = () => {
             </a>
           </div>
           <div className="h-full mt-10 rounded-t-full flex overflow-hidden md:w-1/2 md:mt-0">
-            <img src={image} alt="" className="h-[20rem] w-full object-cover lg:h-[40vw] xl:h-[40rem] md:h-[40rem]" />
+            <img
+              src={image}
+              alt=""
+              className="h-[20rem] w-full object-cover lg:h-[40vw] xl:h-[40rem] md:h-[40rem]"
+            />
           </div>
         </div>
       </div>
