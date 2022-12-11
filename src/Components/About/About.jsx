@@ -38,7 +38,7 @@ const About = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-col justify-center mt-10 mx-auto md:w-[90%]">
+        <div className="flex flex-col items-center justify-center mt-10 mx-auto md:w-[90%]">
           <h2 className="capitalize text-4xl font-bold text-center text-headerColor md:text-szmd md:flex md:flex-row md:flex-wrap">
             Why our product?
           </h2>

@@ -124,7 +124,7 @@ const Hero = () => {
             <img
               src={image}
               alt=""
-              className="h-[20rem] w-full object-cover lg:h-[40vw] xl:h-[40rem] md:h-[40rem]"
+              className="h-[20rem] w-full object-cover lg:h-[40vw] xl:h-[40rem] md:h-[45vw]"
             />
           </div>
         </div>
