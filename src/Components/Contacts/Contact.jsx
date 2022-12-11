@@ -12,10 +12,10 @@ const Contact = () => {
           </h2>
           <p className="text-white text-2xl lg:text-lg xl:text-2xl">
             Have any question? You can in touch with and we will respond to you
-            as soon as possible
+            as soon as possible.
           </p>
         </div>
-        <Link className="border py-3 px-10 text-semibold text-white rounded-3xl flex items-center gap-2 hover:bg-white hover:text-navColor ease-in-out duration-500">
+        <Link className="border py-2 px-10 text-semibold text-white text-xl rounded-3xl flex items-center gap-2 hover:bg-white hover:text-navColor ease-in-out duration-500">
           Contact us <HiOutlineArrowNarrowRight />
         </Link>
       </div>

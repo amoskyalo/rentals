@@ -6,14 +6,23 @@ html {
     scroll-behavior: smooth;
 }
 
+/* body{
+    
+} */
+
 nav{
     z-index: 999;
 }
 
 .hero{
-    height: 100vh;
+    height: max-content;
     padding-bottom: 2rem;
 }
+
+#pricing{
+    margin-top: 4rem;
+}
+
 
 .about{
     background-image: url(../src/Assets/Blobs/blob\ \(1\).svg);

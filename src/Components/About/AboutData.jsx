@@ -15,6 +15,6 @@ export const datas = [
     {img: paperwork, title: "Reduced/No Paperwork", text:"There is little or no need for paper woks. Any relevant information about your rentals, such as tenants and their payments, will be stored in your system."},
     {img: accounting, title: "Accounting services", text: "It will be very easy to track your payments thourgh our system. This will help you track every payment for your rentals. You will be able to know which house is paid and which one is not."},
     {img: security, title: "Security", text: "Unlike paperwork, every information will be safely stored in our system. Any payment or any other information will be kept safe."},
-    {img: cost, title: "Reduced cost", text: "Additionally, when you make use of a property management system, you get to save more and avoid unnecessary costs. You can cut costs on transportation and even save more when you have total proper control of your finances."},
+    {img: cost, title: "Reduced cost", text: "When you make use of our system, you get to save more and avoid unnecessary costs. You can cut costs on transportation and even save more when you have total proper control of your finances."},
     {img: userfriendly, title: "Friendly User interface", text:"Our system is made with a friendly user interface such that you can easily navigate your way around it and also do things with little or no expertise."}
 ]
