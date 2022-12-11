@@ -14,7 +14,7 @@ import visa from "../../Assets/Payments/visa.jpg";
 
 const Footer = () => {
   return (
-    <footer className="border md:py-4 lg:px-10 xl:px-0">
+    <footer className="border md:pt-4 lg:px-10 xl:px-0">
       <div className="flex flex-col max-w-screen-xl mx-auto">
         <div className="flex flex-row space-x-20">
           <div className="flex flex-col px-2 space-y-5 md:w-[40%] md:px-0">
@@ -130,8 +130,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="hidden md:flex">
-          <p className="text-sm text-navColor text-center mt-4 md:hidden">
+        <div className="hidden md:flex flex-col">
+          <p className="text-base text-navColor text-center mt-4">
             copyright@2022 - ourname
           </p>
         </div>

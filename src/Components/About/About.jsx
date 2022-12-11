@@ -42,20 +42,20 @@ const About = () => {
           <h2 className="capitalize text-4xl font-bold text-center text-headerColor md:text-szmd md:flex md:flex-row md:flex-wrap">
             Why our product?
           </h2>
-          <div className="products space-y-5 grid grid-cols-1 mt-10 px-3 border-b border-t py-4 md:space-y-0 md:px-0">
+          <div className="products space-y-5 grid grid-cols-1 mt-10 px-3 border-b border-t py-4 md:space-y-0 md:px-0 md:flex md:flex-row md:flex-wrap">
             {datas.map((data, i) => (
               <div
-                className="bg-hoverColor flex flex-col items-center py-5 rounded hover:bg-hoverColor text-white ease-in-out duration-1000 md:w-1/2 md:flex-row md:bg-none"
+                className="bg-hoverColor flex flex-col items-center py-5 rounded hover:bg-hoverColor text-white ease-in-out duration-1000 md:w-1/2 md:flex-row md:bg-transparent"
                 key={i}
               >
-                <div className="flex justify-center items center rounded-full overflow-hidded md:w-1/3">
+                <div className="flex justify-center items-center rounded-full overflow-hidded md:w-1/3">
                   <img
                     src={data.img}
                     alt=""
                     className="h-24 w-24 m-auto rounded-full object-cover"
                   />
                 </div>
-                <div className="flex flex-col px-2 text-center md:w-3/4 md:px-0">
+                <div className="flex flex-col px-2 text-center md:w-3/4 md:px-0 md:text-start">
                   <h2 className="text-headerColor text-xl font-semibold">
                     {data.title}.
                   </h2>

@@ -10,7 +10,7 @@ const Contact = () => {
     >
       <div className="flex flex-col justify-between items-center md:flex-row">
         <div className="flex flex-col md:w-2/3">
-          <h2 className="text-3xl text-white font-bold md:text-szmd">
+          <h2 className="text-3xl text-white font-bold capitalize md:text-szmd md:mb-4">
             Get in touch with us!
           </h2>
           <p className="text-white text-base md:text-xl md:text-lg lg:text-lg xl:text-2xl">
