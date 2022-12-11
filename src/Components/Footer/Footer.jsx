@@ -87,7 +87,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-10 flex flex-col px-2 md:px-0 md:justify-between md:flex-row">
-          <Link to="https://qwarqo.com/" className="flex flex-col items-start">
+          <a href="https://qwarqo.com/" target="_blank" rel="noreferrer" className="flex flex-col items-start">
             <img
               src={qwarqo}
               alt="listing company"
@@ -96,7 +96,7 @@ const Footer = () => {
             <p className="text-navColor text-sm italic md:text-lg">
               List your property with Qwarqo
             </p>
-          </Link>
+          </a>
           <div className="flex flex-row items-center justify-between">
             <p className="text-sm text-navColor text-center mt-4 md:hidden">
               copyright@2022 - ourname
