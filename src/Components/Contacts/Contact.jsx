@@ -8,8 +8,8 @@ const Contact = () => {
       className="contact border p-5 bg-navColor mx-auto mt-10 mb-10 rounded-lg xl:max-w-screen-xl lg:max-w-[75vw] md:py-20 md:px-10"
       id="contacts"
     >
-      <div className="flex flex-col justify-between items-center md:flex-row">
-        <div className="flex flex-col md:w-2/3">
+      <div className="flex flex-col justify-between items-center space-y-5 md:flex-row md:space-y-0">
+        <div className="flex flex-col space-y-3 md:w-2/3 md:space-y-0">
           <h2 className="text-3xl text-white font-bold capitalize md:text-szmd md:mb-4">
             Get in touch with us!
           </h2>
