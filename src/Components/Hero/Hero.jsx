@@ -3,6 +3,7 @@ import image from "../../Assets/image.png";
 import logo from "../../Assets/logo2.png";
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [sticky, setSticky] = useState("#");
@@ -29,15 +30,15 @@ const Hero = () => {
         }`}
       >
         <div className="relative flex flex-row justify-between items-center mx-auto max-w-full md:max-w-screen-xl">
-          <a
-            href="home"
+          <Link
+            to="/"
             className="flex flex-row items-center h-16 md:h-20 lg:h-20 xl:h-20 z-50"
           >
             <img src={logo} alt="" className="h-full" />
             <p className="text-white text-base font-semibold md:text-lg">
               OurName
             </p>
-          </a>
+          </Link>
           <div
             className={`flex flex-col items-center absolute ${
               active ? `top-[4rem]` : `top-[-450%]`

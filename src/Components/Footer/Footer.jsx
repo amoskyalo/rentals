@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="flex flex-row space-x-20">
           <div className="flex flex-col px-2 space-y-5 md:w-[40%] md:px-0">
             <div className="flex flex-col  space-y-2 border-b pb-2">
-              <Link to="/home" className="flex flex-row items-center">
+              <Link to="/" className="flex flex-row items-center">
                 <img src={logo} alt="our logo" className="h-16 w-16 md:h-24 md:w-24" />
                 <p className="text-navColor text-xl font-semibold md:text-4xl">Ourname</p>
               </Link>
@@ -39,9 +39,9 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="you@yours.com"
-                className="w-3/4 px-2 py-3 rounded-l border outline-none"
+                className="w-3/4 px-2 py-2 border outline-none rounded-l-lg"
               />
-              <button className="bg-navColor text-white text-lg py-3 w-1/4 rounded-r">
+              <button className="bg-navColor text-white text-lg py-2 w-1/4 rounded-r-lg">
                 Join
               </button>
             </div>

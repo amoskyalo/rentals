@@ -45,7 +45,7 @@ const About = () => {
           <div className="products space-y-5 grid grid-cols-1 mt-10 px-3 border-b border-t py-4 md:space-y-0 md:px-0 md:flex md:flex-row md:flex-wrap">
             {datas.map((data, i) => (
               <div
-                className="bg-hoverColor flex flex-col items-center py-5 rounded hover:bg-hoverColor text-white ease-in-out duration-1000 md:w-1/2 md:flex-row md:bg-transparent"
+                className="bg-white flex flex-col items-center py-5 rounded hover:bg-hoverColor text-white ease-in-out duration-1000 md:w-1/2 md:flex-row md:bg-transparent"
                 key={i}
               >
                 <div className="flex justify-center items-center rounded-full overflow-hidded md:w-1/3">

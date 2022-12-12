@@ -30,11 +30,11 @@ const Testimonials = () => {
                     Abdul Ali
                   </p>
                   <ImQuotesLeft className="text-navColor my-2" />
-                  <p className="text-base whitespace-normal text-center text-navColor">
+                  <p className="text-base whitespace-normal text-center text-navColor md:text-lg">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Fugit dolorum hic optio enim ullam corrupti ex ut esse sint
                     quisquam. Ipsum beatae non rerum recusandae nulla dolorum
-                    modi inventore debitis.
+                    modi inventore debitis. Lorem, ipsum.
                   </p>
                 </div>
               </div>
@@ -53,11 +53,11 @@ const Testimonials = () => {
                     Richard Tait
                   </p>
                   <ImQuotesLeft className="text-navColor my-2" />
-                  <p className="text-base whitespace-normal text-center text-navColor">
+                  <p className="text-base whitespace-normal text-center text-navColor md:text-lg">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Tempore explicabo recusandae corporis laborum perspiciatis
                     iste? Vel quisquam nemo voluptatum quae! Reiciendis
-                    perferendis sit soluta, neque aliquid nobis.
+                    perferendis sit soluta, neque aliquid nobis. Lorem, ipsum.
                   </p>
                 </div>
               </div>
@@ -76,7 +76,7 @@ const Testimonials = () => {
                     Ruth Garcia
                   </p>
                   <ImQuotesLeft className="text-navColor my-2" />
-                  <p className="text-base whitespace-normal text-center text-navColor">
+                  <p className="text-base whitespace-normal text-center text-navColor md:text-lg">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Esse eum impedit facere sequi amet quaerat nulla natus nobis
                     odit accusantium error, quos ex repellat ut vero
@@ -99,7 +99,7 @@ const Testimonials = () => {
                     Yusuf Joseph
                   </p>
                   <ImQuotesLeft className="text-navColor my-2" />
-                  <p className="text-base whitespace-normal text-center text-navColor">
+                  <p className="text-base whitespace-normal text-center text-navColor md:text-lg">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Esse eum impedit facere sequi amet quaerat nulla natus nobis
                     odit accusantium error, quos ex repellat ut vero
