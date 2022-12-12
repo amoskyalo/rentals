@@ -32,7 +32,7 @@ const Courasel = ({ children }) => {
         </div>
       </div>
       <div
-        className={`inner whitespace-nowrap md:space-x-2 duration-1000`}
+        className={`inner whitespace-nowrap  md:space-x-2 duration-1000`}
         style={{transform: `translate(-${currentIndex * 100}%)`}}>
         {children}
       </div>
