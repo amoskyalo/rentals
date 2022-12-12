@@ -24,7 +24,7 @@ const Hero = () => {
     <section className="hero flex flex-col bg-navColor relative" id="home">
       {/* nav */}
       <nav
-        className={`py-0 lg:px-10 ${
+        className={`py-0 md:px-2 ${
           sticky === "sticky" ? `fixed w-full top-0 bg-stickyNav` : ""
         }`}
       >
@@ -34,7 +34,7 @@ const Hero = () => {
             className="flex flex-row items-center h-16 md:h-20 lg:h-20 xl:h-20 z-50"
           >
             <img src={logo} alt="" className="h-full" />
-            <p className="text-white text-base font-semibold md:text-xl md:text-xl">
+            <p className="text-white text-base font-semibold md:text-lg">
               OurName
             </p>
           </a>
@@ -45,31 +45,31 @@ const Hero = () => {
           >
             <a
               href="#home"
-              className="text-white text-lg font-normal md:text-xl md:font-semibold"
+              className="text-white text-base font-normal md:font-semibold"
             >
               Home
             </a>
             <a
               href="#about"
-              className="text-white text-lg font-normal md:text-xl md:font-semibold"
+              className="text-white text-base font-normal md:font-semibold"
             >
               About
             </a>
             <a
               href="#contacts"
-              className="text-white text-lg font-normal md:text-xl md:font-semibold"
+              className="text-white text-base font-normal md:font-semibold"
             >
               Contact
             </a>
             <a
               href="#pricing"
-              className="text-white text-lg font-normal md:text-xl md:font-semibold"
+              className="text-white text-base font-normal md:font-semibold"
             >
               Pricing
             </a>
             <a
               href="#pricing"
-              className="text-white text-lg font-normal md:text-xl md:font-semibold"
+              className="text-white text-base font-normal md:font-semibold"
             >
               Testimonials
             </a>
@@ -80,7 +80,7 @@ const Hero = () => {
               Get started
             </a>
           </div>
-          <div className="hidden lg:flex">
+          <div className="hidden md:flex">
             <a
               href="https://house-management-system.netlify.app/"
               className="bg-white rounded-3xl py-2 px-6 text-base text-navColor font-bold hover:bg-navColor hover:text-white hover:border duration-700"
@@ -89,7 +89,7 @@ const Hero = () => {
             </a>
           </div>
           <div
-            className="flex mr-1 lg:hidden z-50"
+            className="flex mr-1 md:hidden z-50"
             onClick={() => setActive(!active)}
           >
             <AiOutlineMenu className="text-2xl text-white" />
@@ -120,7 +120,7 @@ const Hero = () => {
               Get started
             </a>
           </div>
-          <div className="h-full mt-10 rounded-t-full flex overflow-hidden md:w-1/2 md:mt-0">
+          <div className="hidden h-full mt-10 rounded-t-full overflow-hidden md:w-1/2 md:mt-0 md:flex">
             <img
               src={image}
               alt=""
