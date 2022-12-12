@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { MdOutlineArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
 export const CouraselItem = ({ children }) => {
@@ -21,22 +21,6 @@ const Courasel = ({ children }) => {
     setIndex(newIndex);
   };
   // console.log(currentIndex)
-
-  const [paused, setPaused] = useState(false);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (!paused) {
-        setCurrentIndex(currentIndex + 1);
-      }
-    }, 3000);
-
-    return () => {
-      if (interval) {
-        clearInterval(interval);
-      }
-    };
-  });
-
   return (
     <div className="md:px-10">
       <div className="flex flex-row justify-end space-x-5 mb-2">
@@ -51,8 +35,6 @@ const Courasel = ({ children }) => {
         className={`inner whitespace-nowrap md:space-x-2 duration-1000 translate-x-[-${
           currentIndex * 100
         }%] md:translate-x-[-${(currentIndex / 2) * 100}%]`}
-        onMouseEnter={() => setPaused(true)}
-        onMouseLeave={() => setPaused(false)}
       >
         {React.Children.map(children, (child) => {
           return React.cloneElement(child);
