@@ -24,21 +24,17 @@ const Courasel = ({ children }) => {
   return (
     <div className="md:px-10">
       <div className="flex flex-row justify-end space-x-5 mb-2">
-        <div className="bg-navColor p-1 rounded" onClick={() =>setCurrentIndex(currentIndex - 1)}>
+        <div className="bg-navColor p-1 rounded cursor-pointer" onClick={() =>setCurrentIndex(currentIndex - 1)}>
           <MdOutlineArrowBackIos className="text-white" />
         </div>
-        <div className="bg-navColor p-1 rounded" onClick={()=>setCurrentIndex(currentIndex + 1)}>
+        <div className="bg-navColor p-1 rounded cursor-pointer" onClick={()=>setCurrentIndex(currentIndex + 1)}>
           <MdArrowForwardIos className="text-white" />
         </div>
       </div>
       <div
-        className={`inner whitespace-nowrap md:space-x-2 duration-1000 translate-x-[-${
-          currentIndex * 100
-        }%] md:translate-x-[-${(currentIndex / 2) * 100}%]`}
+        className={`inner whitespace-nowrap md:space-x-2 duration-1000 translate-x-[-${currentIndex * 100}%] md:translate-x-[-${(currentIndex / 2) * 100}%]`}
       >
-        {React.Children.map(children, (child) => {
-          return React.cloneElement(child);
-        })}
+        {children}
       </div>
     </div>
   );
