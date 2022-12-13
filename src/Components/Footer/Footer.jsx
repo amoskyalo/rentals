@@ -73,7 +73,7 @@ const Footer = () => {
           <div className="flex flex-col pl-2 space-y-3 md:space-y-0 md:justify-between md:flex-row md:w-[60%] md:pl-0">
             <div className="flex flex-col space-y-4 mt-5 md:mt-0 xl:ml-24">
               <div className="flex flex-col">
-                <h2 className="text-xl text-navColor font-bold mb-2">CALL</h2>
+                <h2 className="text-lg text-navColor font-bold mb-2">CALL</h2>
                 <a href="tel:+254791686851" className="text-base text-navColor">
                   Tel: +254791686851
                 </a>
@@ -85,7 +85,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className="flex flex-col space-y-2">
-                <h2 className="text-xl text-navColor font-bold">HELP</h2>
+                <h2 className="text-lg text-navColor font-bold">HELP</h2>
                 <a
                   href="mailto:info@rentalsuccess.com"
                   target="_blank"
@@ -97,8 +97,8 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex flex-col">
-              <h2 className="text-navColor text-xl font-semibold">
-                Quick Links
+              <h2 className="text-navColor text-lg font-semibold">
+                QUICK LINKS
               </h2>
               <a href="#about" className="text-navColor text-base md:text-lg">
                 Home
@@ -109,10 +109,10 @@ const Footer = () => {
               <a href="#about" className="text-navColor text-base md:text-lg">
                 Contact Us
               </a>
-              <Link to="/" className="text-navColor text-base">
+              <Link to="/privacy-policy" className="text-navColor text-base">
                 Privacy Policy
               </Link>
-              <Link to="/" className="text-navColor text-base">
+              <Link to="/terms and conditions" className="text-navColor text-base">
                 Terms and Conditions
               </Link>
               <Link to="/" className="text-navColor text-base">
