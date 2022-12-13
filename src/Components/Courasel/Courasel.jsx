@@ -61,13 +61,12 @@ const Courasel = ({ children }) => {
         style={{ transform: `translate(-${currentIndex * 100}%)` }}
       >
         {React.Children.map(children, (child, index) =>{
-          // console.log(index)
           return React.cloneElement(child)
         })}
       </div>
       <div className="flex flex-row items-center justify-center space-x-4 mt-5">
         {reactChildren.map((child, i) =>(
-          <p className={`p-1.5 rounded-full ${reactChildren.indexOf(child) === currentIndex ? `bg-navColor` : "bg-white"}`} key={i}></p>
+          <p className={`py-1.5 rounded-full duration-1000 ${reactChildren.indexOf(child) === currentIndex ? `bg-navColor px-3` : "bg-white px-1.5"}`} key={i}></p>
         ))}
       </div>
     </div>
