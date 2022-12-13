@@ -67,7 +67,7 @@ const Courasel = ({ children }) => {
       <div className="flex flex-row items-center justify-center space-x-4 mt-5">
         {reactChildren.map((child, i) => (
           <p
-          onClick={() => setCurrentIndex(reactChildren.indexOf(child))}
+            onClick={() => setCurrentIndex(reactChildren.indexOf(child))}
             className={`cursor-pointer py-1.5 rounded-full duration-1000 ${
               reactChildren.indexOf(child) === currentIndex
                 ? `bg-navColor px-3`
