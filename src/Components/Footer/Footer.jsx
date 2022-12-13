@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../Assets/logo2.png";
 import { BsTwitter, BsLinkedin, BsWhatsapp } from "react-icons/bs";
+import { MdOutlineMailOutline } from 'react-icons/md'
 import { AiFillInstagram, AiOutlineCopyrightCircle } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
@@ -89,9 +90,9 @@ const Footer = () => {
                   href="mailto:info@rentalsuccess.com"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-base text-navColor"
+                  className="flex flex-row items-center text-base text-navColor"
                 >
-                  Mail Us: info@rentalsuccess.com
+                  <MdOutlineMailOutline className="mr-1"/> info@rentalsuccess.com
                 </a>
               </div>
             </div>
