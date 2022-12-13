@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../Assets/logo2.png";
 import { BsTwitter, BsLinkedin } from "react-icons/bs";
-import { AiFillInstagram } from "react-icons/ai";
+import { AiFillInstagram, AiOutlineCopyrightCircle} from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 import qwarqo from "../../Assets/qwarqo.png";
@@ -98,8 +98,8 @@ const Footer = () => {
             </p>
           </a>
           <div className="flex flex-row items-center justify-between">
-            <p className="text-sm text-navColor text-center mt-4 md:hidden">
-              @rentalSuccess
+            <p className="flex flex-row items-center text-sm text-navColor text-center mt-4 md:hidden">
+            <AiOutlineCopyrightCircle />rentalSuccess
             </p>
             <div className="flex flex-row items-center justify-end space-x-1 mt-4 md:mt-0 md:space-x-2">
               <img
@@ -131,8 +131,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="hidden md:flex flex-col">
-          <p className="text-base text-navColor text-center mt-4">
-            copyright@2022 - ourname
+          <p className="flex flex-row items-center text-base text-navColor text-center mt-4">
+            <AiOutlineCopyrightCircle />rentalSuccess
           </p>
         </div>
       </div>
