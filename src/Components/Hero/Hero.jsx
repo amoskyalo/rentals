@@ -35,8 +35,8 @@ const Hero = () => {
             className="flex flex-row items-center h-16 md:h-20 lg:h-20 xl:h-20 z-50"
           >
             <img src={logo} alt="" className="h-full" />
-            <p className="text-white text-base font-semibold md:text-lg">
-              OurName
+            <p className="text-white text-base font-semibold italic md:text-lg">
+              rentalSuccess
             </p>
           </Link>
           <div

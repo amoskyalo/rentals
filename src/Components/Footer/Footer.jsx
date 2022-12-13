@@ -21,7 +21,7 @@ const Footer = () => {
             <div className="flex flex-col  space-y-2 border-b pb-2">
               <Link to="/" className="flex flex-row items-center">
                 <img src={logo} alt="our logo" className="h-16 w-16 md:h-24 md:w-24" />
-                <p className="text-navColor text-xl font-semibold md:text-4xl">Ourname</p>
+                <p className="text-navColor text-xl font-semibold italic md:text-4xl">rentalSuccess</p>
               </Link>
               <p className="text-lg text-navColor md:text-xl">
                 We make rental management simple, secure and comfortable for you
@@ -99,7 +99,7 @@ const Footer = () => {
           </a>
           <div className="flex flex-row items-center justify-between">
             <p className="text-sm text-navColor text-center mt-4 md:hidden">
-              copyright@2022 - ourname
+              @rentalSuccess
             </p>
             <div className="flex flex-row items-center justify-end space-x-1 mt-4 md:mt-0 md:space-x-2">
               <img
