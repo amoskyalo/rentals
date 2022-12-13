@@ -14,7 +14,7 @@ const Testimonials = () => {
         <h3 className="text-4xl font-semibold text-center capitalize md:text-szmd">
           Hear from our <span className="text-navColor">customers</span>
         </h3>
-        <div className="my-20 overflow-hidden w-full md:mx-auto md:w-[70%]">
+        <div className="my-20 overflow-hidden w-full md:mx-auto md:w-[60%]">
           <Courasel>
             <CouraselItem>
               <div className="flex flex-col items-center">
@@ -29,12 +29,12 @@ const Testimonials = () => {
                   <p className="text-lg font-semibold text-navColor">
                     Abdul Ali
                   </p>
-                  <ImQuotesLeft className="text-navColor my-2" />
+                  <ImQuotesLeft className="text-navColor my-2 md:my-5" />
                   <p className="text-base whitespace-normal text-center text-navColor md:text-lg">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Fugit dolorum hic optio enim ullam corrupti ex ut esse sint
                     quisquam. Ipsum beatae non rerum recusandae nulla dolorum
-                    modi inventore debitis. Lorem, ipsum.
+                    modi inventore debitis. Lorem, ipsum. Lorem, ipsum.
                   </p>
                 </div>
               </div>
@@ -52,7 +52,7 @@ const Testimonials = () => {
                   <p className="text-lg font-semibold text-navColor">
                     Richard Tait
                   </p>
-                  <ImQuotesLeft className="text-navColor my-2" />
+                  <ImQuotesLeft className="text-navColor my-2 md:my-5" />
                   <p className="text-base whitespace-normal text-center text-navColor md:text-lg">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Tempore explicabo recusandae corporis laborum perspiciatis
@@ -75,7 +75,7 @@ const Testimonials = () => {
                   <p className="text-lg font-semibold text-navColor">
                     Ruth Garcia
                   </p>
-                  <ImQuotesLeft className="text-navColor my-2" />
+                  <ImQuotesLeft className="text-navColor my-2 md:my-5" />
                   <p className="text-base whitespace-normal text-center text-navColor md:text-lg">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Esse eum impedit facere sequi amet quaerat nulla natus nobis
@@ -98,7 +98,7 @@ const Testimonials = () => {
                   <p className="text-lg font-semibold text-navColor">
                     Yusuf Joseph
                   </p>
-                  <ImQuotesLeft className="text-navColor my-2" />
+                  <ImQuotesLeft className="text-navColor my-2 md:my-5" />
                   <p className="text-base whitespace-normal text-center text-navColor md:text-lg">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Esse eum impedit facere sequi amet quaerat nulla natus nobis
