@@ -126,7 +126,7 @@ const Footer = () => {
               </a>
             </div>
             {/* icons for mobile */}
-            <div className="flex flex-row items-center gap-3">
+            <div className="flex flex-row items-center gap-3 md:hidden">
               <a href="https://twitter.com/_amos_kyalo">
                 <BsTwitter className="text-navColor text-2xl" />
               </a>
