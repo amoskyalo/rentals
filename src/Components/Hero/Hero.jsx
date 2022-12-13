@@ -116,7 +116,7 @@ const Hero = () => {
             </p>
             <a
               href="https://house-management-system.netlify.app/"
-              className="bg-white py-2 px-6 border rounded-3xl text-navColor text-xl font-bold w-max hover:bg-navColor hover:text-white duration-700 md:mt-5 "
+              className="bg-white  border w-max rounded-3xl py-2 px-6 text-base text-navColor font-bold hover:bg-transparent hover:text-white hover:border duration-500"
             >
               Get started
             </a>
