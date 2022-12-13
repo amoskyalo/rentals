@@ -3,7 +3,7 @@ import image from "../../Assets/image.png";
 
 const Terms = () => {
   return (
-    <div className="flex flex-col max-w-screen-xl mx-auto">
+    <div className="flex flex-col max-w-screen-xl mx-auto px-2 md:px-0">
       <div className="mx-auto w-full">
         <img src={image} alt="" className="h-64 w-full object-cover md:h-96" />
       </div>
