@@ -14,7 +14,7 @@ const Testimonials = () => {
         <h3 className="text-4xl font-semibold text-center capitalize md:text-szmd">
           Hear from our <span className="text-navColor">customers</span>
         </h3>
-        <div className="my-20 overflow-hidden w-full md:mx-auto md:w-[60%]">
+        <div className="my-20 overflow-hidden w-full md:mx-auto md:w-[60%] lg:w-[75%] xl:w-[60%]">
           <Courasel>
             <CouraselItem>
               <div className="flex flex-col items-center">
