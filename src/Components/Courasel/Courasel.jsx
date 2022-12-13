@@ -3,7 +3,8 @@ import { MdOutlineArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
 export const CouraselItem = ({ children }) => {
   return (
-    <div className="bg-white px-5 py-10 w-full inline-flex rounded">
+    <div className="bg-white px-5 py-10 w-full inline-flex rounded" 
+    style={{transform:"scale(1)"}}>
       {children}
     </div>
   );
@@ -21,7 +22,6 @@ const Courasel = ({ children }) => {
     setIndex(newIndex);
   };
   // console.log(currentIndex)
-  const reactChildren = React.Children.toArray(children);
 
   const [paused, setPaused] = useState(false);
   useEffect(() => {
@@ -37,6 +37,8 @@ const Courasel = ({ children }) => {
       }
     };
   });
+
+  const reactChildren = React.Children.toArray(children);
 
   return (
     <div className="md:px-10">
@@ -61,7 +63,7 @@ const Courasel = ({ children }) => {
         style={{ transform: `translate(-${currentIndex * 100}%)` }}
       >
         {React.Children.map(children, (child, index) => {
-          return React.cloneElement(child);
+           return React.cloneElement(child, index === currentIndex ? {transform:"scale(0.5)"} : {transform:"scale(1)"});
         })}
       </div>
       <div className="flex flex-row items-center justify-center space-x-4 mt-5">
@@ -71,7 +73,7 @@ const Courasel = ({ children }) => {
             className={`cursor-pointer py-1.5 rounded-full duration-1000 ${
               reactChildren.indexOf(child) === currentIndex
                 ? `bg-navColor px-3`
-                : "bg-white px-1.5"
+                : `bg-white px-1.5`
             }`}
             key={i}
           ></p>

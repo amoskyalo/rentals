@@ -5,7 +5,7 @@ import display2 from "../../Assets/display2.jpeg";
 
 const About = () => {
   return (
-    <div className="about mt-10 px-0 lg:px-10 xl:px-0" id="about">
+    <div className="about mt-10 px-0 lg:px-5 xl:px-0" id="about">
       <div className="mx-auto max-w-screen-xl">
         <h2 className="text-4xl text-headerColor font-bold text-center md:text-szmd">
           How We Make <span className="text-spanColor">Difference</span>
@@ -23,7 +23,7 @@ const About = () => {
               className="absolute -bottom-12 right-0  h-3/4 rounded w-3/4 object-contain md:-right-10"
             />
           </div>
-          <div className="flex flex-col mt-16 md:mt-0 md:w-1/2 ">
+          <div className="flex flex-col px-2 mt-16 md:mt-0 md:w-1/2 md:px-0">
             <p className="w-full mx-auto text-center leading-7 lg:text-sm xl:text-lg">
               As a rental owner or rentals manager, you look forward to a day
               you can control all of your rentals without having to go through
@@ -38,7 +38,7 @@ const About = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center mt-10 mx-auto md:w-[90%]">
+        <div className="flex flex-col items-center justify-center mt-10 mx-auto md:w-[90%] lg:w-full xl:w-[90%]">
           <h2 className="capitalize text-4xl font-bold text-center text-headerColor md:text-szmd md:flex md:flex-row md:flex-wrap">
             Why our product?
           </h2>

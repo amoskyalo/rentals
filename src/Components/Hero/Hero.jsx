@@ -46,31 +46,31 @@ const Hero = () => {
           >
             <a
               href="#home"
-              className="text-white text-base font-bold"
+              className="text-white text-lg font-bold"
             >
               Home
             </a>
             <a
               href="#about"
-              className="text-white text-base font-bold"
+              className="text-white text-lg font-bold"
             >
               About
             </a>
             <a
               href="#contacts"
-              className="text-white text-base font-bold"
+              className="text-white text-lg font-bold"
             >
               Contact
             </a>
             <a
               href="#pricing"
-              className="text-white text-base font-bold"
+              className="text-white text-lg font-bold"
             >
               Pricing
             </a>
             <a
               href="#pricing"
-              className="text-white text-base font-bold"
+              className="text-white text-lg font-bold"
             >
               Testimonials
             </a>
@@ -99,7 +99,7 @@ const Hero = () => {
       </nav>
 
       {/* hero */}
-      <div className="mt-10 h-full pb-10 xl:px-0 lg:px-10 md:mt-20">
+      <div className="mt-10 h-full pb-10 xl:px-0 lg:px-5 md:mt-20">
         <div className="flex flex-col h-full mx-auto md:flex-row md:space-x-10 md:max-w-screen-xl">
           <div className="flex flex-col px-2 md:px-0 md:w-1/2">
             <h2 className="text-white text-4xl font-bold capitalize md:text-sz md:leading-1">
