@@ -42,35 +42,35 @@ const Hero = () => {
           <div
             className={`flex flex-col items-center absolute ${
               active ? `top-[4rem]` : `top-[-450%]`
-            } duration-500 w-full pb-4 bg-navColor space-y-5 md:flex-row md:pb-0 md:bg-none md:space-x-5 md:space-y-0 md:relative md:w-max md:top-0`}
+            } duration-500 w-full pb-4 bg-navColor space-y-3 md:flex-row md:pb-0 md:bg-none md:space-x-5 md:space-y-0 md:relative md:w-max md:top-0`}
           >
             <a
               href="#home"
-              className="text-white text-base font-normal md:font-semibold"
+              className="text-white text-base font-bold"
             >
               Home
             </a>
             <a
               href="#about"
-              className="text-white text-base font-normal md:font-semibold"
+              className="text-white text-base font-bold"
             >
               About
             </a>
             <a
               href="#contacts"
-              className="text-white text-base font-normal md:font-semibold"
+              className="text-white text-base font-bold"
             >
               Contact
             </a>
             <a
               href="#pricing"
-              className="text-white text-base font-normal md:font-semibold"
+              className="text-white text-base font-bold"
             >
               Pricing
             </a>
             <a
               href="#pricing"
-              className="text-white text-base font-normal md:font-semibold"
+              className="text-white text-base font-bold"
             >
               Testimonials
             </a>
