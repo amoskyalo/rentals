@@ -21,7 +21,7 @@ const Courasel = ({ children }) => {
     setIndex(newIndex);
   };
   // console.log(currentIndex)
-  const reactChildren = (React.Children.toArray(children));
+  const reactChildren = React.Children.toArray(children);
 
   const [paused, setPaused] = useState(false);
   useEffect(() => {
@@ -60,13 +60,21 @@ const Courasel = ({ children }) => {
         className={`inner whitespace-nowrap  md:space-x-2 duration-1000`}
         style={{ transform: `translate(-${currentIndex * 100}%)` }}
       >
-        {React.Children.map(children, (child, index) =>{
-          return React.cloneElement(child)
+        {React.Children.map(children, (child, index) => {
+          return React.cloneElement(child);
         })}
       </div>
       <div className="flex flex-row items-center justify-center space-x-4 mt-5">
-        {reactChildren.map((child, i) =>(
-          <p className={`py-1.5 rounded-full duration-1000 ${reactChildren.indexOf(child) === currentIndex ? `bg-navColor px-3` : "bg-white px-1.5"}`} key={i}></p>
+        {reactChildren.map((child, i) => (
+          <p
+          onClick={() => setCurrentIndex(reactChildren.indexOf(child))}
+            className={`cursor-pointer py-1.5 rounded-full duration-1000 ${
+              reactChildren.indexOf(child) === currentIndex
+                ? `bg-navColor px-3`
+                : "bg-white px-1.5"
+            }`}
+            key={i}
+          ></p>
         ))}
       </div>
     </div>
