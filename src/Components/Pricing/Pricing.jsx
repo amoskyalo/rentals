@@ -53,9 +53,9 @@ const Pricing = () => {
             Sacco
           </p>
         </div>
-        <div className="grid grid-cols-1 space-y-7 mx-auto mt-10 md:space-y-0 md:w-[75%] md:flex md:flex-row md:space-x-5">
+        <div className="grid grid-cols-1 space-y-10 mx-auto mt-10 md:space-y-0 md:w-[75%] md:flex md:flex-row md:space-x-5">
           {data.map((offer, i) => (
-            <div className="flex flex-col w-3/4 md:w-1/4 mx-auto" key={i}>
+            <div className="flex flex-col w-[80%] md:w-1/4 mx-auto" key={i}>
               <div className="bg-white flex flex-col relative  w-full h-[13rem] max-h-[14rem] rounded-lg px-4 pt-5">
                 <h2 className="absolute left-2 -top-3 bg-navColor text-white text-sm px-2 py-1 rounded">
                   $

@@ -111,7 +111,7 @@ const Footer = () => {
                 Contact Us
               </a>
               <Link to="/pricing" className="text-navColor text-base">
-                Priing
+                Pricing
               </Link>
               <Link to="/privacy-policy" className="text-navColor text-base">
                 Privacy Policy
