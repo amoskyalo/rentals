@@ -2,6 +2,7 @@ import React from "react";
 import { datas } from "./AboutData";
 import display1 from "../../Assets/display1.jpeg";
 import display2 from "../../Assets/display2.jpeg";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -30,12 +31,12 @@ const About = () => {
               the stress or the extra miles involved.With a management system,
               you do not have to be present at all times to manage your rentals.
             </p>
-            <a
-              href="https://house-management-system.netlify.app/"
+            <Link
+              to="/pricing"
               className="mt-5 bg-navColor border w-max mx-auto rounded-3xl py-2 px-6 text-base text-white font-bold hover:bg-white hover:text-navColor hover:border duration-500 md:mt-10 md:ml-10"
             >
               Get started
-            </a>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center mt-10 mx-auto md:w-[90%] lg:w-full xl:w-[90%]">

@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../Assets/logo2.png";
 import { BsTwitter, BsLinkedin, BsWhatsapp } from "react-icons/bs";
-import { MdOutlineMailOutline } from 'react-icons/md'
+import { MdOutlineMailOutline } from "react-icons/md";
 import { AiFillInstagram, AiOutlineCopyrightCircle } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
@@ -15,7 +15,7 @@ import visa from "../../Assets/Payments/visa.jpg";
 
 const Footer = () => {
   return (
-    <footer className="border md:pt-4 lg:px-5 xl:px-0">
+    <footer className="border-t-2 border-[#686a71]-1000 md:pt-4 lg:px-5 xl:px-0">
       <div className="flex flex-col max-w-screen-xl mx-auto">
         <div className="flex flex-col md:flex-row md:space-x-20">
           <div className="flex flex-col px-2 space-y-5 md:w-[40%] md:px-0">
@@ -27,7 +27,7 @@ const Footer = () => {
                   className="h-16 w-16 md:h-24 md:w-24"
                 />
                 <p className="text-navColor text-xl font-semibold italic md:text-2xl">
-                  rentalSuccess
+                  Renters Success
                 </p>
               </a>
               <p className="text-lg text-navColor lg:text-lg xl:text-xl">
@@ -92,7 +92,8 @@ const Footer = () => {
                   rel="noreferrer"
                   className="flex flex-row items-center text-base text-navColor"
                 >
-                  <MdOutlineMailOutline className="mr-1"/> info@rentalsuccess.com
+                  <MdOutlineMailOutline className="mr-1" />{" "}
+                  info@rentalsuccess.com
                 </a>
               </div>
             </div>
@@ -109,21 +110,27 @@ const Footer = () => {
               <a href="#about" className="text-navColor text-base md:text-lg">
                 Contact Us
               </a>
+              <Link to="/pricing" className="text-navColor text-base">
+                Priing
+              </Link>
               <Link to="/privacy-policy" className="text-navColor text-base">
                 Privacy Policy
               </Link>
-              <Link to="/terms and conditions" className="text-navColor text-base">
+              <Link
+                to="/terms and conditions"
+                className="text-navColor text-base"
+              >
                 Terms and Conditions
               </Link>
               <Link to="/" className="text-navColor text-base">
                 FAQ
               </Link>
-              <a
-                href="https://house-management-system.netlify.app/"
+              <Link
+                to="/pricing"
                 className="hidden mt-2 bg-navColor border w-max rounded-3xl py-2 px-6 text-base text-white font-bold hover:bg-white hover:text-navColor hover:border duration-500 md:mt-10 md:flex"
               >
                 Get started
-              </a>
+              </Link>
             </div>
             {/* icons for mobile */}
             <div className="flex flex-row items-center gap-3 md:hidden">
@@ -161,7 +168,7 @@ const Footer = () => {
           <div className="flex flex-row items-center justify-between">
             <p className="flex flex-row items-center text-sm text-navColor text-center mt-4 md:hidden">
               <AiOutlineCopyrightCircle />
-              rentalSuccess
+              Renters Success
             </p>
             <div className="flex flex-row items-center justify-end space-x-1 mt-4 md:mt-0 md:space-x-2">
               <img
@@ -196,7 +203,7 @@ const Footer = () => {
           <p className="flex flex-row items-center text-base text-navColor text-center mt-4">
             copyright 2022
             <AiOutlineCopyrightCircle />
-            <a href="#home">rentalSuccess</a>
+            <a href="#home">Renters Success</a>
           </p>
         </div>
       </div>
