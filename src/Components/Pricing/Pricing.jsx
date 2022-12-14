@@ -2,8 +2,9 @@ import React from "react";
 import Nav from "../Hero/Nav";
 import { CgArrowLongRight } from "react-icons/cg";
 import image from "../../Assets/Blobs/blob.png";
-import { data } from "./Data";
+import { data, steps } from "./Data";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Pricing = () => {
   const [active, setActive] = useState("#");
@@ -14,7 +15,7 @@ const Pricing = () => {
         <Nav />
       </div>
       <div className="flex flex-col max-w-screen-xl mx-auto my-5 text-center md:my-20">
-        <h2 className="text-4xl px-2 font-semibold opacity-[0.9] md:px-0 md:text-6xl">
+        <h2 className="text-4xl px-2 font-semibold opacity-[0.9] md:px-0 md:text-6xl z-0">
           Make more online, <span className="text-navColor">for less</span>
         </h2>
         <div className="flex h-48 w-48 mx-auto mt-5 overflow-hidden rounded-full md:mt-10">
@@ -61,7 +62,8 @@ const Pricing = () => {
                   $
                   {Math.floor(
                     ((offer.original - offer.price) / offer.original) * 100
-                  )}% Off
+                  )}
+                  % Off
                 </h2>
                 <h2 className="text-xl font-semibold">{offer.name}</h2>
                 <p className="mt-5 text-4xl font-bold">
@@ -83,10 +85,43 @@ const Pricing = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col mt-20">
+        <div className="px-2 md:px-0">
+          <div className="bg-[#dbdcdc] p-3 items-center rounded-xl flex flex-col mt-10 mx-auto md:mt-20 md:p-5 md:flex-row md:w-3/4">
+            <div className="flex flex-col md:w-3/4">
+              <h2 className="text-2xl font-semibold opacity-[0.9] md:text-3xl text-start">
+                Finding it hard to choose a plan? We can help
+              </h2>
+              <p className="text-start mt-1">
+                Take our quiz to discover the perfect match for your needs.
+              </p>
+            </div>
+            <div className="flex justify-end md:w-1/4">
+              <Link
+                to="/pricing"
+                className="bg-navColor rounded-xl py-2 px-6 h-max text-sm text-white font-bold md:text-lg hover:bg-white hover:text-navColor hover:border duration-1000"
+              >
+                Take Quize
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col mt-10 md:mt-20">
           <h2 className="text-3xl font-semibold opacity-[0.9] md:text-5xl">
             Get Started With Simple Steps
           </h2>
+          <div className="flex flex-col px-5 mx-auto mb-10 space-y-10 md:mt-10 md:w-3/4 md:px-0">
+            {steps.map((step, i) =>(
+                <div className="steps flex flex-col  md:even:flex-row-reverse md:odd:text-start md:flex-row">
+                    <div className="h-48 md:w-1/2">
+                        <img src={step.img} alt="" className="h-full w-full object-contain"/>
+                    </div>
+                    <div className="flex flex-col md:w-1/2">
+                        <h2 className="text-2xl font-semibold text-navColor md:text-start">{steps.indexOf(step) + 1}. {step.step}</h2>
+                        <p className="mt-2 md:w-3/4 md:text-start">{step.desc}.</p>
+                    </div>
+                </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
