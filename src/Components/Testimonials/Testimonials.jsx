@@ -9,10 +9,10 @@ import person4 from "../../Assets/Testimonials/person4.jpeg"
 
 const Testimonials = () => {
   return (
-    <section className="md:max-w-screen-xl mx-auto my-10 px-2">
+    <section className="testimonials md:max-w-screen-xl mx-auto my-10 px-2">
       <div>
-        <h3 className="text-4xl font-semibold text-center capitalize md:text-szmd">
-          Hear from our <span className="text-navColor">customers</span>
+        <h3 className="text-4xl font-semibold text-center capitalize md:text-szmd opacity-[0.7]">
+          Hear from our customers
         </h3>
         <div className="my-20 overflow-hidden w-full md:mx-auto md:w-[60%] lg:w-[75%] xl:w-[60%]">
           <Courasel>

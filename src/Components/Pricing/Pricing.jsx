@@ -66,22 +66,22 @@ const Pricing = () => {
                   % Off
                 </h2>
                 <h2 className="text-xl font-semibold">{offer.name}</h2>
-                <p className="mt-5 text-4xl font-bold">
+                <p className="mt-5 text-4xl font-bold xl:text-5xl lg:text-2xl">
                   ${offer.price}{" "}
                   <span className="text-base align-top">/month</span>
                 </p>
-                <p className="line-through mt-2">${offer.original}</p>
+                <p className="line-through mt-1 opacity-[0.7] font-semibold">${offer.original}</p>
                 <button className="bg-navColor absolute bottom-2 left-[5%] w-[90%] py-2 rounded text-white font-semibold">
                   Get Started
                 </button>
               </div>
-              <p className="text-start mt-2 cursor-pointer">
+              <a href="https://house-management-system.netlify.app/" className="text-start mt-2 cursor-pointer">
                 {offer.description}{" "}
                 <span className="flex flex-row items-end block text-navColor">
                   Go to {offer.name}{" "}
                   <CgArrowLongRight className="text-xl ml-2" />
                 </span>
-              </p>
+              </a>
             </div>
           ))}
         </div>
@@ -111,7 +111,7 @@ const Pricing = () => {
           </h2>
           <div className="flex flex-col px-5 mx-auto mb-10 space-y-10 md:mt-10 md:w-3/4 md:px-0">
             {steps.map((step, i) =>(
-                <div className="steps flex flex-col  md:even:flex-row-reverse md:odd:text-start md:flex-row">
+                <div className="steps flex flex-col  md:even:flex-row-reverse md:odd:text-start md:flex-row" key={i}>
                     <div className="h-48 md:w-1/2">
                         <img src={step.img} alt="" className="h-full w-full object-contain"/>
                     </div>
