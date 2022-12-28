@@ -4,10 +4,13 @@ import Nav from "../Hero/Nav";
 
 const Privacy = () => {
   return (
-    <div>
+    <section>
+      {/* nav */}
       <div className="bg-stickyNav">
-      <Nav className="bg-stickyNav"/>
+        <Nav className="bg-stickyNav" />
       </div>
+
+      {/* containter */}
       <div className="flex flex-col max-w-screen-xl mx-auto px-2 md:px-0">
         <div className="mx-auto w-full">
           <img
@@ -16,6 +19,7 @@ const Privacy = () => {
             className="h-64 w-full object-cover md:h-96"
           />
         </div>
+        
         <div className="policy mb-5 mx-auto bg-white md:px-5 md:py-10 md:mb-10">
           <h1 className="text-2xl text-navColor font-bold mb-5 border-b pb-2 md:mb-10 md:text-4xl">
             Privacy Policy
@@ -267,7 +271,7 @@ const Privacy = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

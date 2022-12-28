@@ -8,6 +8,14 @@ import { Link } from "react-router-dom";
 
 const Pricing = () => {
   const [active, setActive] = useState("#");
+
+  const click = true;
+  const navigateToFree = (name) => {
+    if(name === "Free Trial"){
+      window.location.replace("https://house-management-system.netlify.app/")
+    }
+  }
+
   return (
     <section>
       {/* nav */}
@@ -71,17 +79,17 @@ const Pricing = () => {
                   <span className="text-base align-top">/month</span>
                 </p>
                 <p className="line-through mt-1 opacity-[0.7] font-semibold">${offer.original}</p>
-                <button className="bg-navColor absolute bottom-2 left-[5%] w-[90%] py-2 rounded text-white font-semibold">
+                <button onClick={click ? () => navigateToFree(offer.name) : ""} className="bg-navColor absolute bottom-2 left-[5%] w-[90%] py-2 rounded text-white font-semibold">
                   Get Started
                 </button>
               </div>
-              <a href="https://house-management-system.netlify.app/" className="text-start mt-2 cursor-pointer">
+              <div onClick= {click ? () => navigateToFree(offer.name) : ""} className="text-start mt-2 cursor-pointer">
                 {offer.description}{" "}
                 <span className="flex flex-row items-end block text-navColor">
                   Go to {offer.name}{" "}
                   <CgArrowLongRight className="text-xl ml-2" />
                 </span>
-              </a>
+              </div>
             </div>
           ))}
         </div>
